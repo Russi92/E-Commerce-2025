@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": 1,
+    "name": "Book",
+    "price": 10.99,
+    "imgUrl": "/imgs/book.jpg"
+  },
+  {
+    "id": 2,
+    "name": "laptop",
+    "price": 1199,
+    "imgUrl": "/imgs/laptop.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Iphone 16 pro max",
+    "price": 1.05,
+    "imgUrl": "/imgs/iphone.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bag",
+    "price": 14000,
+    "imgUrl": "/imgs/bag.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chair",
+    "price": 13000,
+    "imgUrl": "/imgs/chair.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Samsung",
+    "price": 10000,
+    "imgUrl": "/imgs/samsung.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Airbods",
+    "price": 10000,
+    "imgUrl": "/imgs/airpods.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ball",
+    "price": 100,
+    "imgUrl": "/imgs/ball.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Mouse",
+    "price": 50,
+    "imgUrl": "/imgs/mouse.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Medel Of Honor",
+    "price": 50,
+    "imgUrl": "/imgs/medel.jpg"
+  }
+]
