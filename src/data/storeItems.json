@@ -59,5 +59,17 @@
     "name": "Medel Of Honor",
     "price": 50,
     "imgUrl": "/imgs/medel.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Speaker",
+    "price": 500,
+    "imgUrl": "/imgs/speaker.jpg"
+  },
+  {
+    "id": 12,
+    "name": "G-Shock",
+    "price": 250,
+    "imgUrl": "/imgs/gshock.jpg"
   }
 ]

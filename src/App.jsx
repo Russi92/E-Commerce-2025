@@ -4,30 +4,36 @@ import { Container } from 'react-bootstrap'
 import { Routes , Route} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import Store from './components/Store'
+import Products from './components/Products'
 import About from './components/About'
+import ShoppingCartProvider from './context/ShoppingCartContext.jsx'
+
 
 const App = () => {
   return(
-      <>
 
-    <Navbar />
 
-    <Container className='mb-4'>
+  <ShoppingCartProvider>
 
-      <Routes>
+      <Navbar />
 
-        <Route path='/' element={<Home />} />
+      <Container className='mb-4'>
 
-        <Route path='/store' element={<Store />} />
+        <Routes>
 
-        <Route path='/about' element={<About />} />
+          <Route path='/' element={<Home />} />
 
-      </Routes>
+          <Route path='/Products' element={<Products />} />
 
-    </Container>
+          <Route path='/about' element={<About />} />
 
-      </>
+        </Routes>
+
+      </Container>
+
+      </ShoppingCartProvider>
+
+   
   )
 }
 

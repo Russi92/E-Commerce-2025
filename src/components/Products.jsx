@@ -7,7 +7,7 @@ const Store = () => {
   return (
     <>
 
-        <h1>Store</h1>
+        <h1>Products</h1>
 
         <Row md={2} xs={1} lg={3} className='g-3'>
 
