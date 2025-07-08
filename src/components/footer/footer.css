@@ -4,3 +4,14 @@
     background-color: rgb(16 21 31);
     padding: 40px 0 10px 0;
 }
+
+.footer-links-container {
+    text-align: center;
+  }
+  
+  @media (max-width: 991.98px) {
+    .footer-links-container {
+      justify-content: center !important;
+    }
+  }
+  
