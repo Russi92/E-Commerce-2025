@@ -9,7 +9,7 @@
         "OldPrice": 35000,
         "NewPrice": 17500,
         "description": "Glass front (Corning Gorilla Armor), glass back (Corning Gorilla Armor), titanium frame (grade 2)",
-        "img": "../../public/imgsHome/samsung.jpg"
+        "img": "/imgsHome/samsung.jpg"
       },
     {
         "id" : 2,
@@ -17,7 +17,7 @@
         "OldPrice": 50000,
         "NewPrice": 25000,
         "description" : "HP provides a wide variety of affordable laptops with the latest features, making it a great option for those looking for a new laptop. Some of the most popular HP laptops below can help you decide which laptop is right for you.",
-        "img" : "../../public/imgsHome/hp.jpg"
+        "img" : "/imgsHome/hp.jpg"
     },
     {
         "id" : 3,
@@ -25,7 +25,7 @@
         "OldPrice": 10000,
         "NewPrice": 5000,
         "description" : "Accessibility features help people with disabilities get the most out of their new AirPods. Features include Live Listen audio8 Headphone levels Headphone Accommodations",
-        "img" : "../../public/imgsHome/airpods.jpg"
+        "img" : "/imgsHome/airpods.jpg"
     },
     {
         "id" : 4,
@@ -33,7 +33,7 @@
         "OldPrice": 8000,
         "NewPrice": 4000,
         "description" : "Accessibility features help people with disabilities get the most out of their new AirPods. Features include Live Listen audio8 Headphone levels Headphone Accommodations",
-        "img" : "../../public/imgsHome/headphone.jpg"
+        "img" : "/imgsHome/headphone.jpg"
     },
     {
         "id" : 5,
@@ -41,7 +41,7 @@
         "OldPrice": 16000,
         "NewPrice": 8000,
         "description" : "Accessibility features help people with disabilities get the most out of their new AirPods. Features include Live Listen audio8 Headphone levels Headphone Accommodations",
-        "img" : "../../public/imgsHome/bicycle.jpg"
+        "img" : "/imgsHome/bicycle.jpg"
     },
     {
         "id" : 6,
@@ -49,6 +49,6 @@
         "OldPrice": 70000,
         "NewPrice": 35000,
         "description" : "Rolex is a Swiss luxury watch manufacturer and brand, renowned for its high-quality, precision timepieces. Founded in 1905 by Hans Wilsdorf and Alfred Davis, the company initially operated under the name Wilsdorf and Davis before registering the Rolex brand name in 1908",
-        "img" : "../../public/imgsHome/rolex.jpg"
+        "img" : "/imgsHome/rolex.jpg"
     }
 ]
