@@ -61,6 +61,7 @@ const Navbar = () => {
           <Nav.Link as={NavLink} to='/' className='text-white'>Home</Nav.Link>
           <Nav.Link as={NavLink} to='/Products' className='text-white'>Products</Nav.Link>
           <Nav.Link as={NavLink} to='/about' className='text-white'>About</Nav.Link>
+          <Nav.Link as={NavLink} to='/ContactUs' className='text-white'>Contact us</Nav.Link>
         </Nav>
 
         <Button variant='outline-primary' className='rounded-circle' style={{ position: "relative" }} onClick={openCart}>

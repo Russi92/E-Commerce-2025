@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='footer'>
 
-            <div className='d-flex justify-content-evenly align-items-center h-100'>
+            <div className='d-flex justify-content-evenly align-items-center'>
 
                 <div className='d-flex flex-column justify-content-around h-100'>
 
@@ -65,6 +65,12 @@ const Footer = () => {
 
                 </div>
 
+            </div>
+
+                <hr className='text-white'/>
+
+            <div className='text-white text-center'>Mohamed Hassan. © 2025 All rights reserved.
+                Designed & developed by Mohamed Hassan, React.js Developer
             </div>
 
     </div>

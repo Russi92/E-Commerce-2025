@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import Card from './Card'
+import Card from './card/Card'
 import { Link } from 'react-router-dom';
 import SectionLinear from './sectionLinear/SectionLinear';
 
