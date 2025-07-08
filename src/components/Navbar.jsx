@@ -45,29 +45,40 @@ import { NavLink } from 'react-router-dom';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 
 const Navbar = () => {
-  const { openCart, cartItems } = useShoppingCart(); // استخدم cartItems بدل cartQuantity
+  const { openCart, cartItems } = useShoppingCart();
 
   return (
-    <NavbarBs sticky='top' className='shadow-sm' style={{ background: "rgb(16 21 31)" }}>
+    <NavbarBs
+      sticky='top'
+      expand='lg'  // ✅ هنا المفتاح لجعل الـ Navbar responsive
+      className='shadow-sm'
+      style={{ background: "rgb(16 21 31)" }}
+    >
       <Container>
-        <Nav className='me-auto d-flex align-items-center'>
-          <Nav.Link as={NavLink} to='/'>
-            <img
-              style={{ width: "50px", borderRadius: "50%", height: "50px" }}
-              src="https://t4.ftcdn.net/jpg/07/07/66/55/360_F_707665525_3PUcntaSU9U3XxwXZ47unl2coRtK8HsE.jpg"
-              alt=""
-            />
-          </Nav.Link>
-          <Nav.Link as={NavLink} to='/' className='text-white'>Home</Nav.Link>
-          <Nav.Link as={NavLink} to='/Products' className='text-white'>Products</Nav.Link>
-          <Nav.Link as={NavLink} to='/about' className='text-white'>About</Nav.Link>
-          <Nav.Link as={NavLink} to='/ContactUs' className='text-white'>Contact us</Nav.Link>
-        </Nav>
+        <NavbarBs.Brand as={NavLink} to='/'>
+          <img
+            style={{ width: "50px", borderRadius: "50%", height: "50px" }}
+            src="https://t4.ftcdn.net/jpg/07/07/66/55/360_F_707665525_3PUcntaSU9U3XxwXZ47unl2coRtK8HsE.jpg"
+            alt=""
+          />
+        </NavbarBs.Brand>
 
+        {/* ✅ زرار الـ Toggle للموبايل */}
+        <NavbarBs.Toggle aria-controls="responsive-navbar-nav" className='bg-light' />
+
+        {/* ✅ العناصر اللي هتتفتح وتقفل في الموبايل */}
+        <NavbarBs.Collapse id="responsive-navbar-nav">
+          <Nav className='me-auto d-flex align-items-center'>
+            <Nav.Link as={NavLink} to='/' className='text-white'>Home</Nav.Link>
+            <Nav.Link as={NavLink} to='/Products' className='text-white'>Products</Nav.Link>
+            <Nav.Link as={NavLink} to='/about' className='text-white'>About</Nav.Link>
+            <Nav.Link as={NavLink} to='/ContactUs' className='text-white'>Contact Us</Nav.Link>
+          </Nav>
+        </NavbarBs.Collapse>
+
+        {/* ✅ أي عناصر خارج القائمة زي زرار الكارت */}
         <Button variant='outline-primary' className='rounded-circle' style={{ position: "relative" }} onClick={openCart}>
           <i className="fa-solid fa-cart-plus text-white"></i>
-
-          {/* عرض عدد المنتجات المختلفة فقط */}
           {cartItems.length > 0 && (
             <div
               style={{
@@ -90,3 +101,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
