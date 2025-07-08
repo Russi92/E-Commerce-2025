@@ -3,39 +3,47 @@ import Carousel from 'react-bootstrap/Carousel';
 import Card from './card/Card'
 import { Link } from 'react-router-dom';
 import SectionLinear from './sectionLinear/SectionLinear';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Home = () => {
   return (
     <div className='mt-3'>
 
-    <section className="text-white py-5 text-center mb-3 shadow-lg" style={{borderRadius: "20px",background: "linear-gradient(90deg, #111 0%, #222 100%)"}}>
-      
-    <div className='d-flex justify-content-between align-items-center m-3'>
+<section className="text-white py-5 text-center mb-3 shadow-lg" style={{ borderRadius: "20px", background: "linear-gradient(90deg, #111 0%, #222 100%)" }}>
 
-      <h1>Welcome to</h1>
+<Container>
+  <Row className="align-items-center text-center text-md-start mb-4">
 
-      <div>
-      <img style={{width : "200px" , borderRadius : "50%" , height : "200px"}} src="https://t4.ftcdn.net/jpg/07/07/66/55/360_F_707665525_3PUcntaSU9U3XxwXZ47unl2coRtK8HsE.jpg" alt="" />
-      </div>
+    <Col xs={12} md={4} className="mb-3 mb-md-0">
+      <h1 className="fw-bold">Welcome to</h1>
+    </Col>
 
-      <div>
-      <h1>Lions Store</h1>
-      </div>
+    <Col xs={12} md={4} className="d-flex justify-content-center">
+      <img
+        src="https://t4.ftcdn.net/jpg/07/07/66/55/360_F_707665525_3PUcntaSU9U3XxwXZ47unl2coRtK8HsE.jpg"
+        alt="Logo"
+        style={{ width: "150px", height: "150px", borderRadius: "50%", objectFit: "cover" }}
+      />
+    </Col>
 
-      </div>  
-      <div className="container">
+    <Col xs={12} md={4}>
+      <h1 className="fw-bold">Lions Store</h1>
+    </Col>
 
-        <h1 className="display-4">🔥 Discover Top Deals This Month! 🔥</h1>
+  </Row>
 
-        <p className="lead">
-          Shop the latest in electronics, accessories, and more — all in one place.
-        </p>
+  <Row>
+    <Col>
+      <h1 className="display-5 fw-bold">🔥 Discover Top Deals This Month! 🔥</h1>
+      <p className="lead">
+        Shop the latest in electronics, accessories, and more — all in one place.
+      </p>
+      <Link to="/products" className="btn btn-primary btn-lg mt-3">Shop Now</Link>
+    </Col>
+  </Row>
+</Container>
 
-        <Link to="/products" className="btn btn-primary btn-lg mt-3">Shop Now</Link>
-
-      </div>
-
-    </section>
+</section>
       
       
 
