@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className='d-flex flex-column flex-sm-row gap-5'>
+          <div className='d-flex flex-sm-row gap-5 justify-content-center justify-content-lg-start mt-3 mt-lg-0'>
 
             <div>
               <h5 className='text-white'>Product</h5>
