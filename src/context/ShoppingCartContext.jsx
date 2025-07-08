@@ -47,21 +47,40 @@ const ShoppingCartProvider = ({ children }) => {
     });
   };
 
+  // const decreaseCartQuantity = (id) => {
+  //   setCartItems((currItems) => {
+  //     if (currItems.find((item) => item.id === id) == null) {
+  //       return currItems.filter((item) => item.id !== id);
+  //     } else {
+  //       return currItems.map((item) => {
+  //         if (item.id === id) {
+  //           return { ...item, quantity: item.quantity - 1 };
+  //         } else {
+  //           return item;
+  //         }
+  //       });
+  //     }
+  //   });
+  // };
   const decreaseCartQuantity = (id) => {
     setCartItems((currItems) => {
-      if (currItems.find((item) => item.id === id) == null) {
+      const item = currItems.find((item) => item.id === id);
+      
+      // لو مش موجود أصلاً
+      if (item == null) return currItems;
+  
+      // لو الكمية حالياً 1 → نحذفه
+      if (item.quantity === 1) {
         return currItems.filter((item) => item.id !== id);
-      } else {
-        return currItems.map((item) => {
-          if (item.id === id) {
-            return { ...item, quantity: item.quantity - 1 };
-          } else {
-            return item;
-          }
-        });
       }
+  
+      // غير كده، قلل الكمية
+      return currItems.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+      );
     });
   };
+  
 
   const removeItemFromCart = (id) => {
     setCartItems((currItems) => currItems.filter((item) => item.id !== id));

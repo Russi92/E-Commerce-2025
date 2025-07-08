@@ -4,6 +4,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 import CartItem from './CartItem'
 import formatCurrency from './formatCurrency';
 import StoreItem from '../data/storeItems.json';
+import { Link } from 'react-router-dom';
 
 
 const ShowShoppingCart = ({isOpen}) => {
@@ -29,10 +30,12 @@ const ShowShoppingCart = ({isOpen}) => {
                     },0)
                 )}
                 </div>
+            <Link to='/ShowProductsPage' style={{textDecoration : "none" , color : "gray"}}>See All Products</Link>
 
                 </Stack>
                 
             </Offcanvas.Body>
+
         </Offcanvas>
     );
 };
