@@ -76,7 +76,7 @@ const Home = () => {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-img"
-          src="https://tech-offer.com/media/2025/05/Website-msi-v15.jpg"
+          src="https://m.media-amazon.com/images/G/31/Pritam_cepc/boativypro/WhatsApp_Image_2025-07-01_at_12.07.57_PM._SX1242_QL85_.jpg"
           alt="Second slide"
         />
       </Carousel.Item>
