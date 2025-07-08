@@ -91,6 +91,17 @@ const ShowProductsPage = () => {
             <Modal.Body>
               {!confirmed ? (
                 <Form onSubmit={handleConfirmOrder}>
+
+                <Form.Group className="mb-3">
+                    <Form.Label>Payment Method</Form.Label>
+                    <Form.Select required>
+                      <option value="">Select a method</option>
+                      <option>Fawry</option>
+                      <option>Vodafone Cash</option>
+                      <option>InstaPay</option>
+                    </Form.Select>
+                  </Form.Group>
+
                   <Form.Group className="mb-3">
                     <Form.Label>Full Name</Form.Label>
                     <Form.Control type="text" required placeholder="Enter your name" />
@@ -104,16 +115,6 @@ const ShowProductsPage = () => {
                   <Form.Group className="mb-3">
                     <Form.Label>Phone Number</Form.Label>
                     <Form.Control type="tel" required placeholder="Enter your phone" />
-                  </Form.Group>
-
-                  <Form.Group className="mb-3">
-                    <Form.Label>Payment Method</Form.Label>
-                    <Form.Select required>
-                      <option value="">Select a method</option>
-                      <option>Fawry</option>
-                      <option>Vodafone Cash</option>
-                      <option>InstaPay</option>
-                    </Form.Select>
                   </Form.Group>
 
                   <Button type="submit" variant="primary" className="w-100">

@@ -30,7 +30,7 @@ const ShowShoppingCart = ({isOpen}) => {
                     },0)
                 )}
                 </div>
-            <Link to='/ShowProductsPage' style={{textDecoration : "none" , color : "gray"}}>See All Products</Link>
+            <Link to='/ShowProductsPage' onClick={closeCart} style={{textDecoration : "none" , color : "gray"}}>See All Products</Link>
 
                 </Stack>
                 
